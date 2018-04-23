@@ -13,7 +13,7 @@ public class ControllerMapping {
         return instance;
     }
 
-    private static HashMap<String,Method> ctontrollerAndMethods =new HashMap<>();
+    private static HashMap<String,Method> controllerAndMethods =new HashMap<>();
 
     /**
      * 将一个Action的方法注册进来
@@ -22,7 +22,16 @@ public class ControllerMapping {
      * @param method 对应的方法
      */
     public void registeAction(String controllerName,String methodName,Method method) {
-        ctontrollerAndMethods.put(controllerName+"#"+methodName,method);
+        controllerAndMethods.put(controllerName+"#"+methodName,method);
+    }
+
+    /**
+     * 将一个Controller的方法注册进来
+     * @param controllerNameAndMethodName  如UserController#add
+     * @param method
+     */
+    public void registeAction(String controllerNameAndMethodName,Method method) {
+        controllerAndMethods.put(controllerNameAndMethodName,method);
     }
 
     /**
@@ -32,6 +41,15 @@ public class ControllerMapping {
      * @return
      */
     public Method getMethod(String controllerName,String methodName){
-        return ctontrollerAndMethods.get(controllerName+"#"+methodName);
+        return controllerAndMethods.get(controllerName+"#"+methodName);
+    }
+
+    /**
+     * 传入控制器及其对应方法的名称 如UserController#add
+     * @param controllerNameAndMethodName
+     * @return
+     */
+    public Method getMethod(String controllerNameAndMethodName){
+        return controllerAndMethods.get(controllerNameAndMethodName);
     }
 }

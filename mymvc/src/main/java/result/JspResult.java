@@ -15,6 +15,14 @@ public class JspResult implements BaseResult {
     private String jspPath;
     private Map<String, Object> model;
 
+
+    /**
+     * 默认的不带任何参数的JspResult
+     */
+    public JspResult() {
+        this.model = new HashMap<>();
+    }
+
     /**
      * 直接跳转，不附加数据
      *
@@ -22,7 +30,9 @@ public class JspResult implements BaseResult {
      */
     public JspResult(String jspPath) {
         this.jspPath = jspPath;
+        this.model = new HashMap<>();
     }
+
 
     /**
      * 跳转到指定jsp 并附加model
@@ -35,6 +45,15 @@ public class JspResult implements BaseResult {
         this.model = model;
     }
 
+    public String getJspPath() {
+        return jspPath;
+    }
+
+    public JspResult setJspPath(String jspPath) {
+        this.jspPath = jspPath;
+        return this;
+    }
+
     /**
      * 存入数据到Attribute中
      *
@@ -42,13 +61,12 @@ public class JspResult implements BaseResult {
      * @param value 值
      */
     public void putAttrbuite(String key, Object value) {
-        if (this.model == null) model = new HashMap<>();
         this.model.put(key, value);
     }
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) {
-        if (!jspPath.endsWith(".jsp")) {
+        if (jspPath==null||!jspPath.endsWith(".jsp")) {
             throw new RuntimeException("你可能跳转的不是jsp页面，而是:" + jspPath);
         }
 

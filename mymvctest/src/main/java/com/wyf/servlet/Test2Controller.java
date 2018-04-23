@@ -1,8 +1,8 @@
 package com.wyf.servlet;
 
-import anno.Controller;
+import anno.WyfController;
 
-@Controller
+@WyfController
 public class Test2Controller {
 
 }

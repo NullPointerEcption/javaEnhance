@@ -1,8 +1,14 @@
 package com.wyf.servlet;
 
-import anno.Controller;
+import anno.WyfController;
+import result.AjaxResult;
+import result.BaseResult;
 
-@Controller
+@WyfController
 public class Test1Controller {
 
+    public BaseResult test() throws Exception {
+        System.out.println("test1执行了。。。");
+        return new AjaxResult(123);
+    }
 }
