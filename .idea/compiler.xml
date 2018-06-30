@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="DesignPattern" />
+        <module name="elk" />
+        <module name="HessianInterface" />
+        <module name="HessionClient" />
+        <module name="HessionServer" />
+        <module name="javaEnhance" />
+        <module name="mymvctest" />
+        <module name="rabbitMQReceiver" />
+        <module name="rabbitMQSender" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DesignPattern" target="1.8" />
+      <module name="elk" target="1.5" />
+      <module name="HessianInterface" target="1.5" />
+      <module name="HessionClient" target="1.5" />
+      <module name="HessionServer" target="1.5" />
+      <module name="mymvc" target="1.8" />
+      <module name="mymvctest" target="1.8" />
+      <module name="rabbitMQReceiver" target="1.8" />
+      <module name="rabbitMQSender" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+  </component>
+</project>

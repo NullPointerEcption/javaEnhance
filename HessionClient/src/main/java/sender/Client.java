@@ -1,4 +1,4 @@
-package client;
+package sender;
 
 import com.caucho.hessian.client.HessianProxyFactory;
 import interfaces.ICalculatable;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HessianInterface/HessianInterface.iml" filepath="$PROJECT_DIR$/HessianInterface/HessianInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HessionClient/HessionClient.iml" filepath="$PROJECT_DIR$/HessionClient/HessionClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HessionServer/HessionServer.iml" filepath="$PROJECT_DIR$/HessionServer/HessionServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LRUDemo/LRUDemo.iml" filepath="$PROJECT_DIR$/LRUDemo/LRUDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elk/elk.iml" filepath="$PROJECT_DIR$/elk/elk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/javaEnhance.iml" filepath="$PROJECT_DIR$/.idea/javaEnhance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mymvc/mymvc.iml" filepath="$PROJECT_DIR$/mymvc/mymvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mymvctest/mymvctest.iml" filepath="$PROJECT_DIR$/mymvctest/mymvctest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQReceiver/rabbitMQReceiver.iml" filepath="$PROJECT_DIR$/rabbitMQReceiver/rabbitMQReceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQSender/rabbitMQSender.iml" filepath="$PROJECT_DIR$/rabbitMQSender/rabbitMQSender.iml" />
+    </modules>
+  </component>
+</project>
